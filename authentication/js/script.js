@@ -1,4 +1,4 @@
-function getParameterByName(name, url) {
+function getParameterByName() {
     var queryString = window.location.search;
 		queryString = queryString.substring(1);
 		return queryString;
