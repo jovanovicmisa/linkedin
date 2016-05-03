@@ -1,4 +1,4 @@
-var url = document.url;
+var url = document.URL;
 var name = 'code';
 
 function getParameterByName(name, url) {
