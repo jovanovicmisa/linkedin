@@ -7,9 +7,8 @@
 <body>
 	<script>
 		var url = document.URL;
- -		document.write(url);
- +		var queryString = url.substring( url.indexOf('?') + 1 );
- +		document.write(queryString);
-	</script>
+ +		var queryString = window.location.search;
+  		queryString = queryString.substring(1);
+  		document.write(queryString);	</script>
 </body>
 </html>
