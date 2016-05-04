@@ -7,7 +7,7 @@
 <body>
 	<script>
 		var url = document.URL;
-		var queryString = url.substring( url.lastIndexOf('=') + 1 , url.lastIndexOf('&'));
+		var queryString = url.substring( url.indexOf('?') + 1 , url.lastIndexOf('&'));
  		document.write(queryString);
 
 	</script>
