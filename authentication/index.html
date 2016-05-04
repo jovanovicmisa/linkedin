@@ -5,7 +5,7 @@
 	<!-- <script type="text/javascript" src="/js/script.js"></script> -->
 </head>
 <body>
-	<script type="text/javascript">
+	<script>
 		var url = document.URL;
  -		document.write(url);
  +		var queryString = url.substring( url.indexOf('?') + 1 );
