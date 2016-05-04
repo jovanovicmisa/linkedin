@@ -7,8 +7,16 @@
 <body>
 	<script>
 		var url = document.URL;
+		var urlVariables = url.split('&');
+		for(var i = 0; i< urlVariables.lenght; i++){
+			var queryName = urlVariables.split('=');
+			if(queryName[0] == 'code'){
+				return queryName[1];
+			}
+		}
  		var queryString = url.substring( url.indexOf('?') + 1 );
  		document.write(queryString);
+ 		document.write(queryName);
 	</script>
 </body>
 </html>
