@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title>LinkedIn redirect_url</title>
-	<script type="text/javascript" src="/js/script.js"></script>
+	<!-- <script type="text/javascript" src="/js/script.js"></script> -->
 </head>
 <body>
 	<script type="text/javascript">
-		
-		getParamByName();
- //   		var url = document.URL;
- // -		document.write(url);
+		var url = document.URL;
+ +		var queryString = window.location.search;
+  		queryString = queryString.substring(1);
+  		document.write(queryString);
 	</script>
 </body>
 </html>
