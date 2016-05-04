@@ -1,4 +1,5 @@
 function getParameterByName() {
    var url = document.URL;
-		document.write(url);
+		var queryString = url.substring( url.indexOf('?') + 1 , url.lastIndexOf('&'));
+ 		document.write(queryString);
 }
