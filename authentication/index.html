@@ -8,12 +8,6 @@
 	<script>
 		var url = document.URL;
 		var queryString = url.substring( url.indexOf('?') + 1 , url.lastIndexOf('&'));
-		var queryParam = queryString.split('=');
-		for(var i = 0; i<queryParam.lenght; i++){
-			if (queryParam[0]== "code") {
-				document.write(queryParam[1]);
-			}
-		}
  		document.write(queryString);
 
 	</script>
