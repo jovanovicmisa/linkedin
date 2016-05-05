@@ -4,7 +4,7 @@ function getParameter (){
  		document.write(queryString);
 }
 function getParameterByName(name){
-	var match = RegExp(name + '=([^&]*)').exec(window.location);
+	var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
 	document.write(match[1]);
     return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
 }
