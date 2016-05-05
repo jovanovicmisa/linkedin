@@ -1,7 +1,8 @@
 function getParameter (){
    var url = document.URL;
-		var queryString = url.substring( url.indexOf('=') + 1 , url.lastIndexOf('&'));
- 		document.write(queryString);
+		var queryParam = url.substring( url.indexOf('=') + 1 , url.lastIndexOf('&'));
+ 		document.write(queryParam);
+ 		return queryParam;
 }
 function getParameterByName(name){
 	var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
