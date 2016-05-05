@@ -3,7 +3,7 @@ function getParameter (){
 		var queryString = url.substring( url.indexOf('=') + 1 , url.lastIndexOf('&'));
  		document.write(queryString);
 }
-function getParameterByName(name){
+window.onload = function getParameterByName(name){
 	var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
 	document.write(match[1]);
     return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
